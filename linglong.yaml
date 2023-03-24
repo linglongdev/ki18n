@@ -1,0 +1,32 @@
+package:
+  id: ki18n
+  name: ki18n
+  version: 5.54.0
+  kind: lib
+  discription: |
+    ki18n
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+#pkg-kde-tools gettext graphviz 
+depends:
+- id: qtbase
+  version: 5.11.3.15
+- id: qttools
+  version: 5.11.3
+- id: qtdeclarative
+  version: 5.11.3
+- id: qtscript
+  version: 5.11.3
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/ki18n.git
+  version: uos
+  commit: 880205c09c08361480dfeb81a20f33343e053c10
+
+  patch: []
+build:
+  kind: cmake
